@@ -1,0 +1,18 @@
+
+# Initialize Git in your project folder
+git init
+
+# Create a .gitignore file
+echo results.json >> .gitignore
+echo __pycache__/ >> .gitignore
+echo .venv/ >> .gitignore
+echo .env >> .gitignore
+
+# Stage the project files
+git add cli_app.py .gitignore
+
+# Commit the files
+git commit -m "Build Python CLI app with API integration"
+
+# Rename the branch to main
+git branch -M main
